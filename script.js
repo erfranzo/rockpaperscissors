@@ -45,10 +45,10 @@ function playFullGame() {
 
     playRound(playerSelection, computerSelection);
     
-    console.log('Your score is '+ humanScore);
-    console.log('The computer score is ' + computerScore);
+    console.log(`Your score is ${humanScore} and the computer score is ${computerScore}`);
 }
-    console.log('Final score: You ' + humanScore + ' Computer ' + computerScore);
+    console.log(`Final score: You ${humanScore} Computer ${computerScore}`);
+
 }
 
 playFullGame();
