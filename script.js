@@ -37,13 +37,19 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-// Plays 3 rounds of rock paper scissors and keeps score
-for (let i = 0; i < 3; i++) {
+// Plays 5 rounds of rock paper scissors and keeps score
+function playFullGame() {
+    for (let i = 0; i < 5; i++) {
     const computerSelection = getComputerChoice();
-const playerSelection = getPlayerChoice();
+    const playerSelection = getPlayerChoice();
 
     playRound(playerSelection, computerSelection);
     
     console.log('Your score is '+ humanScore);
     console.log('The computer score is ' + computerScore);
 }
+
+console.log('Final score: You ' + humanScore + ' Computer ' + computerScore);
+}
+
+playFullGame();
